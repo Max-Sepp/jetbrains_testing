@@ -18,11 +18,7 @@ def readline(process):
     return process.stdout.readline().strip()
 
 def average(numList):
-    sum = 0
-    for num in numList:
-        sum += num
-    
-    return sum / len(numList)
+    return sum(numList) / len(numList)
 
 def median(sortedNumList):
     """
