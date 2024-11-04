@@ -24,11 +24,11 @@ def median(sortedNumList):
     return (sortedNumList[int(medianPosition)] + sortedNumList[int(medianPosition)]) / 2
 
 def main():
-    # if len(sys.argv) <= 1:
-    #     print("No program passed in as argument")
-    #     return
+    if len(sys.argv) <= 1:
+        print("No program passed in as argument")
+        return
     
-    program = "randomNum.py"
+    program = sys.argv[1]
 
     randomNumProcess = subprocess.Popen(
         ['python', program],
